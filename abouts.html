@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Selection Portal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Cambria, serif;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(to bottom right, #e8f0ff, #dceeff);
+      color: #333;
+    }
+
+    nav {
+      background-color: #1a237e;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav h1 {
+      color: #fff;
+      font-size: 24px;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 30px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    .nav-links a:hover {
+      color: #ff6f00;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background-image: url('https://images.unsplash.com/photo-1571260899304-425eee4c7efc');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-shadow: 2px 2px 5px #000;
+    }
+
+    .hero p {
+      font-size: 20px;
+      max-width: 700px;
+      margin: auto;
+      text-shadow: 1px 1px 3px #000;
+    }
+
+    .section {
+      padding: 60px 40px;
+      background-color: #f8f9ff;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      color: #1a237e;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      font-size: 18px;
+      line-height: 1.7;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    .stats {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .stat-box {
+      background: #ffffff;
+      border-radius: 15px;
+      padding: 20px 30px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      width: 250px;
+    }
+
+    .stat-box h3 {
+      font-size: 28px;
+      color: #ff6f00;
+    }
+
+    .stat-box p {
+      font-size: 16px;
+      color: #555;
+    }
+
+    footer {
+      background: #1a237e;
+      color: white;
+      text-align: center;
+      padding: 20px 10px;
+      font-size: 15px;
+    }
+
+    footer a {
+      color: #ffcc80;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <h1>College Portal</h1>
+    <div class="nav-links">
+      <a href="homes.html">Home</a>
+      <a href="abouts.html">About</a>
+      <a href="contacts.html">Contact Us</a>
+      <a href="settings.html">Settings</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Find Your Dream College</h2>
+    <p>Discover, compare, and apply to top colleges around the world with confidence and ease.</p>
+  </section>
+
+  <!-- About Section -->
+  <section class="section" id="about">
+    <h2>About Our Portal</h2>
+    <p>
+      The College Selection Portal is your trusted companion in navigating the academic journey.
+      Operating in over <strong>12 countries</strong> including India, USA, Canada, UK, Germany, Australia, and UAE,
+      we empower students with tools to discover the best institutions tailored to their aspirations.
+      <br><br>
+      With a database of over <strong>15,000 colleges</strong> and real-time insights, we’ve helped
+      <strong>1.2 million+ students</strong> find the right path. Our AI-powered recommendation engine,
+      verified student reviews, and expert counseling services ensure personalized, accurate, and up-to-date guidance.
+    </p>
+
+    <div class="stats">
+      <div class="stat-box">
+        <h3>12+</h3>
+        <p>Countries Covered</p>
+      </div>
+      <div class="stat-box">
+        <h3>15,000+</h3>
+        <p>Colleges Listed</p>
+      </div>
+      <div class="stat-box">
+        <h3>1.2M+</h3>
+        <p>Students Guided</p>
+      </div>
+      <div class="stat-box">
+        <h3>98%</h3>
+        <p>User Satisfaction</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 College Selection Portal | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> |
+    <a href="#contacts.html">Contact Us</a>
+    <br><br>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Selection Portal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Cambria, serif;
+    }
+
+    body {
+      background: #f7f9fc;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 128, 0.95);
+      padding: 15px 10%;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #FFD700;
+    }
+
+    /* Hero Section */
+    .hero {
+      height: 80vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: url('images/banner.jpg') no-repeat center center/cover;
+      position: relative;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px 30px;
+      border-radius: 20px;
+      color: white;
+      max-width: 800px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.4rem;
+      margin-bottom: 30px;
+    }
+
+    .cta-btn {
+      background-color: #FFD700;
+      color: #000;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #FFC107;
+    }
+
+    /* College Section */
+    .college-section {
+      padding: 50px 10%;
+      flex: 1;
+    }
+
+    .college-section h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      color: #001f5c;
+      font-size: 2.2rem;
+    }
+
+    .college-card {
+      background-color: white;
+      border: 1px solid #ddd;
+      border-radius: 12px;
+      padding: 25px 30px;
+      margin-bottom: 25px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      transition: transform 0.2s;
+    }
+
+    .college-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .college-card h3 {
+      margin-bottom: 10px;
+      color: #001f5c;
+      font-size: 1.5rem;
+    }
+
+    .college-card p {
+      margin: 6px 0;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .more-btn {
+      margin-top: 15px;
+      background-color: navy;
+      color: white;
+      padding: 10px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .more-btn:hover {
+      background-color: #001a66;
+    }
+
+    /* Footer */
+    footer {
+      background-color: rgba(0, 0, 128, 0.95);
+      color: white;
+      text-align: center;
+      padding: 20px 10%;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1.1rem;
+      }
+
+      .college-card {
+        padding: 20px;
+      }
+
+      .cta-btn {
+        padding: 10px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="logo">EduChoice</div>
+    <ul class="nav-links">
+      <li><a href="homes.html">Home</a></li>
+      <li><a href="abouts.html">About</a></li>
+      <li><a href="contacts.html">Contact Us</a></li>
+      <li><a href="settings.html">Settings</a></li>
+    </ul>
+  </nav>
+
+  <!-- College Section -->
+  <section class="college-section" id="colleges">
+    <h2>Top Colleges</h2>
+
+    <!-- Repeat this card for each college -->
+    <div class="college-card">
+      <h3>College A</h3>
+      <p><strong>Rank:</strong> 1</p>
+      <p><strong>Top Companies:</strong> Google, Microsoft, Amazon</p>
+      <p><strong>Courses:</strong> Computer Science, Mechanical Engineering, Business Administration</p>
+      <a href="#" class="more-btn">More</a>
+    </div>
+
+    <div class="college-card">
+      <h3>College B</h3>
+      <p><strong>Rank:</strong> 2</p>
+      <p><strong>Top Companies:</strong> Apple, Tesla, Facebook</p>
+      <p><strong>Courses:</strong> Electrical Engineering, Data Science, Economics</p>
+      <a href="#" class="more-btn">More</a>
+    </div>
+
+    <div class="college-card">
+      <h3>College C</h3>
+      <p><strong>Rank:</strong> 3</p>
+      <p><strong>Top Companies:</strong> IBM, Intel, Dell</p>
+      <p><strong>Courses:</strong> IT, AI, Robotics</p>
+      <a href="#" class="more-btn">More</a>
+    </div>
+
+    <div class="college-card">
+      <h3>College D</h3>
+      <p><strong>Rank:</strong> 4</p>
+      <p><strong>Top Companies:</strong> Oracle, Adobe, HP</p>
+      <p><strong>Courses:</strong> Software Engineering, Design, Cybersecurity</p>
+      <a href="#" class="more-btn">More</a>
+    </div>
+
+    <div class="college-card">
+      <h3>College E</h3>
+      <p><strong>Rank:</strong> 5</p>
+      <p><strong>Top Companies:</strong> Wipro, Infosys, TCS</p>
+      <p><strong>Courses:</strong> IT, Management, Data Analytics</p>
+      <a href="#" class="more-btn">More</a>
+    </div>
+
+    <div class="college-card">
+      <h3>College F</h3>
+      <p><strong>Rank:</strong> 6</p>
+      <p><strong>Top Companies:</strong> Nvidia, AMD, Cisco</p>
+      <p><strong>Courses:</strong> Electronics, Embedded Systems, AI</p>
+      <a href="#" class="more-btn">More</a>
+    </div>
+
+    <div class="college-card">
+      <h3>College G</h3>
+      <p><strong>Rank:</strong> 7</p>
+      <p><strong>Top Companies:</strong> Deloitte, PwC, EY</p>
+      <p><strong>Courses:</strong> Finance, Accounting, Business Analytics</p>
+      <a href="#" class="more-btn">More</a>
+    </div>
+
+    <div class="college-card">
+      <h3>College H</h3>
+      <p><strong>Rank:</strong> 8</p>
+      <p><strong>Top Companies:</strong> NASA, ISRO, Boeing</p>
+      <p><strong>Courses:</strong> Aerospace Engineering, Physics, Research</p>
+      <a href="#" class="more-btn">More</a>
+    </div>
+
+    <div class="college-card">
+      <h3>College I</h3>
+      <p><strong>Rank:</strong> 9</p>
+      <p><strong>Top Companies:</strong> HCL, Capgemini, Accenture</p>
+      <p><strong>Courses:</strong> Computer Applications, Networking, Cloud Computing</p>
+      <a href="#" class="more-btn">More</a>
+    </div>
+
+    <div class="college-card">
+      <h3>College J</h3>
+      <p><strong>Rank:</strong> 10</p>
+      <p><strong>Top Companies:</strong> Philips, Siemens, GE</p>
+      <p><strong>Courses:</strong> Biomedical Engineering, Electronics, Medical Technology</p>
+      <a href="#" class="more-btn">More</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 EduChoice. All rights reserved.</p>
+    <p>Contact us: <a href="mailto:support@educhoice.com">support@educhoice.com</a></p>
+  </footer>
+
+</body>
+</html>

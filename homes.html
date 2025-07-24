@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Selection Portal</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Cambria, serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(0, 0, 128, 0.8);
+      padding: 15px 50px;
+    }
+
+    .logo {
+      font-size: 1.8em;
+      color: white;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #FFD700;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+
+      /* ✅ Proper background setup */
+      background-image: url('images/home.png'); /* <-- Make sure the image exists and path is correct */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    /* ✅ Dark overlay */
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .hero-content {
+      color: white;
+      z-index: 2;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.5rem;
+      margin-bottom: 30px;
+    }
+
+    .cta-btn {
+      background-color: #FFD700;
+      color: #000;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #FFC107;
+    }
+
+    footer {
+      background-color: rgba(0, 0, 128, 0.9);
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #FFD700;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">EduChoice</div>
+      <ul class="nav-links">
+        <li><a href="homes.html">Home</a></li>
+        <li><a href="abouts.html">About</a></li>
+        <li><a href="contacts.html">Contact Us</a></li>
+        <li><a href="settings.html">Settings</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to EduChoice</h1>
+      <p>Your Gateway to the Best Colleges</p>
+      <a href="explore.html" class="cta-btn">Start Exploring</a>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 College Selection Portal | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a>
+  </footer>
+
+  <script>
+    console.log("EduChoice Portal Loaded");
+  </script>
+
+</body>
+</html>
